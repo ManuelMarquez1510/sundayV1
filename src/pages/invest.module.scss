@@ -1,0 +1,158 @@
+@import '../styles/mixin.scss';
+
+.send-info{
+    input{
+        border: solid 1px $color-grey!important;
+        letter-spacing: 1px!important;
+        font-size: 15px!important;
+    }
+}
+.gifhome{
+    width: 55vw;
+    @media (max-width: $lg){
+        width: auto;
+        height: 100vh;
+        margin-left: -200px;
+    }
+}
+
+.gifhome1{
+    width: 90%;
+    height: 50%;
+    border-radius: 50em;
+    margin-top: 0rem;
+    padding-left: 3rem;
+    @media (max-width: $lg){
+        width: auto;
+        height: 100vh;
+        margin-left: -200px;
+    }
+}
+
+
+.home-container{
+    overflow: hidden;
+    
+    .imgStreet{
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        vertical-align: middle;
+    }
+}
+.iconcontainer{
+    @include fluid-width($min_width, $max_width, 50px, 900px);
+    @media (max-width: $lg){
+        width: 100px;
+    }
+}
+.formdiv{
+    border: 3px solid $color-blue;
+    border-radius: 10px;
+    padding: 3em;
+    @media (max-width: $md){
+        padding: 1em;
+    }
+}
+.text-small{
+    color: $color-grey;
+    @include fluid-type($min_width, $max_width, 10px, 18px);
+}
+.general-text{
+    color: $color-blue;
+}
+.general-text-title{
+    color: $color-blue;
+    @include fluid-type($min_width, $max_width, 18px, 50px);
+}
+.general-text-white{
+    color: $color-white;
+}
+.general-text-title-white{
+    color: $color-white;
+    @include fluid-type($min_width, $max_width, 18px, 50px);
+}
+.general-text-title-grey{
+    color: $color-grey;
+    @include fluid-type($min_width, $max_width, 18px, 50px);
+}
+.general-text-grey{
+    color: $color-grey;
+}
+.general-text-green{
+    color: $color-green;
+}
+.general-text-title-green{
+    color: $color-green;
+    @include fluid-type($min_width, $max_width, 18px, 70px);
+}
+.general-text-title-dark{
+    color: $color-dark;
+    @include fluid-type($min_width, $max_width, 18px, 70px);
+}
+.sectionblue{
+    background-color: $color-light-grey;
+    width: 100vw;
+
+}
+.sectionwhite{
+    background-color: $color-white;
+    width: 100vw;
+}
+.sectiongreen{
+    background-color: $color-green-pasto;
+    width: 100vw;
+}
+.sectionhome{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: $color-white;
+}
+.containerGif{
+    overflow: hidden;
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+}
+.iconcontainer{
+    border-radius: 5px;
+    border: 3px solid $color-blue-grad;
+    @include fluid-width($min_width, $max_width, 100px, 400px);
+    padding: 5px;
+    @media (max-width: $md){
+        width: 118px;
+    }
+    .icon{
+        @include fluid-width($min_width, $max_width, 100px, 400px);
+        @include for-tablet {
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+}
+.subtittlegreen{
+    color:$color-light-green;
+    font-weight: bold; 
+    @include font-size(25px);
+    @include for-tablet {
+        text-align: center;
+    }
+}
+
+.generalTextGreen{
+    color:$color-light-green;
+    font-weight: bold; 
+    @include font-size(40px);
+    @include for-tablet {
+        text-align: center;
+    }
+}
+
+.subtittle{
+    color:$color-light-green;
+    font-weight: bold; 
+    @include font-size(40px);
+    @include for-tablet {
+        text-align: center;
+            }
+}

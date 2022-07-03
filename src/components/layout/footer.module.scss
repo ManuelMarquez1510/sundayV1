@@ -1,0 +1,93 @@
+@import '../../styles/mixin.scss';
+
+.footer-container{
+    background-color: $color-light-grey;
+    a{
+        text-decoration: none;
+        transition: all 0.5s;
+        &:hover{
+            cursor: pointer;
+            letter-spacing: 0.2px;
+            font-weight: bold;
+        }
+    }
+    @media (max-width: $md){
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .powered{
+        color: $color-grey !important;
+        a{
+            color: $color-grey!important;
+            &:hover{
+                color: $color-light-green!important;
+                cursor: pointer;
+                font-weight: bold;
+                letter-spacing: 0px!important;
+            }
+        }
+        @include for-phone-only {
+            text-align: center;
+        }
+    }
+    .ibanLogo{
+        @include fluid-width($min_width, $max_width, 30px, 600px);
+        @include for-tablet {
+            width: 155px;
+            height: 80px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+    }
+    .subtittlegreenFooter{
+        color:$color-light-green;
+        @include font-size(17px);
+        @include for-tablet {
+            text-align: center;
+        }
+    }
+
+    .subtittleFooter{
+                @include font-size(17px);
+                @include for-tablet {
+                    text-align: center;
+        }
+    }        
+
+    .sectionDark{
+        background-color: $color-gray-scale;
+        width: 100vw;
+    }
+
+    .sectionDarkLigth{
+        background-color: $color-darker;
+        width: 100vw;
+    }
+
+    .textGeneral{
+        letter-spacing: 1.38px;
+        color: $color-light-green;
+        @include font-size(16px);
+        @media (max-width: $md){
+            letter-spacing: 1px;
+        }
+    }
+    
+}
+.ibanLogoModal{
+    @include fluid-width($min_width, $max_width, 30px, 800px);
+    @include for-tablet {
+        width: 155px;
+        height: 80px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+}
+.subtittle{
+    color:$color-light-green;
+    font-weight: bold; 
+    @include font-size(40px);
+    @include for-tablet {
+        text-align: center;
+            }
+}

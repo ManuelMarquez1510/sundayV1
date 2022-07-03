@@ -1,0 +1,255 @@
+@import '../styles/mixin.scss';
+
+.text-title{
+    font-weight: bold;
+    letter-spacing: 9px;
+    color: $color-green;
+    @include font-size(30px);
+    @media (max-width: $md){
+        letter-spacing: 5px;
+    }
+}
+
+.text-subtitle{
+    font-weight: bold;
+    letter-spacing: 7px;
+    color: $color-green;
+}
+
+.text-title-white{
+    font-weight: bold;
+    letter-spacing: 9px;
+    color: $color-white;
+    @include font-size(30px);
+    @media (max-width: $md){
+        letter-spacing: 5px;
+    }
+}
+
+.text-general{
+    letter-spacing: 1.38px;
+    color: $color-dark;
+    @include font-size(16px);
+    @media (max-width: $md){
+        letter-spacing: 1px;
+    }
+}
+
+.text-general-white{
+    letter-spacing: 1.38px;
+    color: $color-white;
+    @include font-size(16px);
+    @media (max-width: $md){
+        letter-spacing: 1px;
+    }
+}
+.subtittle{
+    color:$color-light-green;
+    font-weight: bold; 
+    @include font-size(40px);
+    @include for-tablet {
+        text-align: center;
+            }
+}
+.subtittlegreen{
+    color:$color-light-green;
+    font-weight: bold; 
+    @include font-size(25px);
+    @include for-tablet {
+        text-align: center;
+            }
+}
+.textgreen{
+    color:$color-light-green;
+    font-weight: bold; 
+    @include font-size(18px);
+    @include for-tablet {
+        text-align: center;
+            }
+}
+.links{
+    color: $color-green;
+    &:hover{
+        color: $color-green-pasto;
+        text-decoration: underline $color-green-pasto;
+    }
+}
+.travel{
+    width: 75vw;
+    margin-left: -250px;
+    @include for-tablet {
+        width: 200px !important;
+        height: 200px;
+    }
+    
+
+}
+.card{
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.16);
+    border: solid 0.5px $color-white;
+    // clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 74% 85%, 40% 100%, 51% 85%, 0 85%);
+    // clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+.containerGif{
+    overflow: hidden;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.send-info{
+    input{
+        border: solid 1px $color-grey!important;
+        letter-spacing: 1px!important;
+        font-size: 15px!important;
+    }
+}
+.gifhome{
+    width: 70%;
+    height: 50%;
+    border-radius: 3rem;
+    margin-top: 3rem;
+    @media (max-width: $lg){
+        width: auto;
+        height: 100vh;
+        margin-left: -200px;
+    }
+}
+.home-container{
+    overflow: hidden;
+    
+    .imgStreet{
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        vertical-align: middle;
+    }
+}
+.iconcontainer{
+    border-radius: 5px;
+    border: 3px solid $color-blue-grad;
+    @include fluid-width($min_width, $max_width, 100px, 400px);
+    padding: 5px;
+    @media (max-width: $md){
+        width: 100px;
+    }
+    .icon{
+        @include fluid-width($min_width, $max_width, 50px, 300px);
+        @include for-tablet {
+            width: 100px;
+            height: 100px;
+        }
+    }
+}
+.icon{
+    @include fluid-width($min_width, $max_width, 100px, 400px);
+    @include for-tablet {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+.formdiv{
+    border: 3px solid $color-light-green;
+    border-radius: 10px;
+    padding: 3em;
+    @media (max-width: $md){
+        padding: 1em;
+    }
+}
+.get-img{
+    @include fluid-width($min_width, $max_width, 150px, 600px);
+    border-radius: 1em;
+    @include for-tablet {
+        width: 280px !important;
+        height: 195px;
+    }
+}
+.text-small{
+    color: $color-grey;
+    @include fluid-type($min_width, $max_width, 10px, 18px);
+}
+.general-text{
+    color: $color-blue;
+}
+.general-text-title{
+    color: $color-blue;
+    @include fluid-type($min_width, $max_width, 18px, 50px);
+}
+.general-text-white{
+    color: $color-white;
+}
+.general-text-title-white{
+    color: $color-white;
+    @include fluid-type($min_width, $max_width, 18px, 50px);
+}
+.general-text-title-grey{
+    color: $color-grey;
+    @include fluid-type($min_width, $max_width, 18px, 50px);
+}
+.general-text-grey{
+    color: $color-grey;
+}
+.general-text-green{
+    color: $color-green;
+}
+.general-text-title-green{
+    color: $color-green;
+    @include fluid-type($min_width, $max_width, 18px, 70px);
+}
+.general-text-title-dark{
+    color: $color-dark;
+    @include fluid-type($min_width, $max_width, 18px, 70px);
+}
+.sectionblue{
+    background-color: $color-blue;
+    width: 100vw;
+    ul {
+        list-style-type: circle;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-weight: 900;
+    }
+    li{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-weight: 200;
+    }
+}
+.sectiongreen{
+    background-color: $color-green-pasto;
+    min-width: auto;
+}
+.sectiongreen{
+    background-color: $color-green-pasto;
+    min-width: auto;
+}
+.sectionwhite{
+    background-color: $color-white;
+    width: 100vw;
+}
+.sectionhome{
+    overflow: hidden;
+    // background-image: url("/images/gif-tarjeta.gif");
+    width: 100%;
+    height: 100%;
+    background-color: $color-white;
+}
+.poweredFooter{
+    color:$color-greyLigth;
+    font-size: 0.8em;
+    text-align: justify;
+    border-top: 0.1em solid $color-greyLigthFoot ;
+
+    a{
+        color: $color-grey!important;
+        &:hover{
+            color: $color-light-green!important;
+            cursor: pointer;
+            font-weight: bold;
+            letter-spacing: 0px!important;
+        }
+    }
+    @include for-phone-only {
+        text-align: center;
+    }
+}

@@ -1,0 +1,27 @@
+@import './../../styles/mixin.scss';
+
+.half-input{
+    width: 50%;
+    @media (max-width: $lg){
+        width: 100%;
+    }
+}
+.subtittle{
+    color:$color-light-green;
+    font-weight: bold; 
+    @include font-size(12px);
+    @include for-tablet {
+        text-align: center;
+            }
+}
+.subtittleDark{
+    font-weight: bold;
+    color: $color-dark;
+    @include font-size(10px);
+    @media (max-width: $md){
+        letter-spacing: 1px;
+    }
+}
+.textGrey{
+    color: $color-grey;
+}

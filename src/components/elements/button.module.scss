@@ -1,0 +1,311 @@
+@import './../../styles/mixin.scss';
+
+.disabled{
+    cursor: not-allowed!important;
+}
+
+.white{
+    color: $color-white;
+    border: 1px solid $color-white;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    transition: 0.5s all;
+    border-radius: 0px;
+    letter-spacing: 2px;
+    @include font-size(13px);
+    &:hover{
+        text-decoration: none!important;
+        background-color: $color-white;
+        color: $color-dark;
+    }
+    &:focus{
+        text-decoration: none!important;
+        background-color: $color-white;
+        color: $color-dark;
+        border: 1px solid $color-dark;
+    }
+}
+.whiteNav{
+    color: $color-blue;
+    border: 1px solid $color-blue;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    transition: 0.5s all;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    font-family: 'DM Sans', sans-serif;
+    @include font-size(13px);
+    &.button{
+        background-color: transparent;
+        color: $color-blue !important;
+        border: 1px solid $color-blue !important;
+    }
+    &.disabled{
+        background-color: transparent;
+        color: $color-blue !important;
+        cursor: not-allowed;
+        border: 1px solid $color-blue !important;
+    }
+    &:hover{
+        text-decoration: none!important;
+        background-color: $color-blue !important;
+        color: $color-white !important;
+        border: 1px solid $color-blue !important;
+    }
+    &:focus{
+        text-decoration: none!important;
+        background-color: $color-blue !important;
+        color: $color-white !important;
+        border: 1px solid $color-blue !important;
+    }
+    &:active{
+        text-decoration: none!important;
+        background-color: $color-blue !important;
+        color: $color-white !important;
+        border: 1px solid $color-blue !important;
+    }
+}
+.blue{
+    color: $color-blue;
+    border: 1px solid $color-blue;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    transition: 0.5s all;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    font-family: 'DM Sans', sans-serif;
+    @include font-size(13px);
+    &.button{
+        background-color: transparent;
+        color: $color-blue !important;
+        border: 1px solid $color-blue !important;
+    }
+    &.disabled{
+        background-color: transparent;
+        color: $color-blue !important;
+        cursor: not-allowed;
+        border: 1px solid $color-blue !important;
+    }
+    &:hover{
+        text-decoration: none!important;
+        background-color: $color-blue !important;
+        color: $color-white !important;
+        border: 1px solid $color-blue !important;
+    }
+    &:focus{
+        text-decoration: none!important;
+        background-color: $color-blue !important;
+        color: $color-white !important;
+        border: 1px solid $color-blue !important;
+    }
+    &:active{
+        text-decoration: none!important;
+        background-color: $color-blue !important;
+        color: $color-white !important;
+        border: 1px solid $color-blue !important;
+    }
+}
+.blueNav{
+    color: $color-white;
+    border: 1px solid $color-blue;
+    background-color: $color-blue;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    transition: 0.5s all;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    font-family: 'DM Sans', sans-serif;
+    @include font-size(13px);
+    &.button{
+        background-color: $color-blue;
+        color: $color-white !important;
+        border: 1px solid $color-blue !important;
+    }
+    &.disabled{
+        background-color: transparent;
+        color: $color-blue !important;
+        cursor: not-allowed;
+        border: 1px solid $color-blue !important;
+    }
+    &:hover{
+        text-decoration: none!important;
+        background-color: transparent !important;
+        color: $color-blue !important;
+        border: 1px solid $color-blue !important;
+    }
+    &:focus{
+        text-decoration: none!important;
+        background-color: $color-blue !important;
+        color: $color-white !important;
+        border: 1px solid $color-blue !important;
+    }
+    &:active{
+        text-decoration: none!important;
+        background-color: $color-blue !important;
+        color: $color-white !important;
+        border: 1px solid $color-blue !important;
+    }
+}
+.blueContent{
+    color: $color-white;
+    border: 1px solid $color-blue;
+    background-color: $color-blue;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    transition: 0.5s all;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    font-family: 'DM Sans', sans-serif;
+    @include font-size(13px);
+    &.button{
+        background-color: $color-blue;
+        color: $color-white !important;
+        border: 1px solid $color-blue !important;
+    }
+    &.disabled{
+        background-color: transparent;
+        color: $color-blue !important;
+        cursor: not-allowed;
+        border: 1px solid $color-blue !important;
+    }
+    &:hover{
+        text-decoration: none!important;
+        background-color: $color-dark-blue !important;
+        color: $color-white !important;
+        border: 1px solid $color-dark-blue !important;
+    }
+    &:focus{
+        text-decoration: none!important;
+        background-color: $color-dark-blue !important;
+        color: $color-white !important;
+        border: 1px solid $color-dark-blue !important;
+    }
+    &:active{
+        text-decoration: none!important;
+        background-color: $color-dark-blue !important;
+        color: $color-white !important;
+        border: 1px solid $color-dark-blue !important;
+    }
+}
+
+
+.green{
+    color: $color-green;
+    border: 1px solid $color-green;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    transition: 0.5s all;
+    border-radius: 0px;
+    letter-spacing: 2px;
+    @include font-size(13px);
+    &.button{
+        background-color: transparent;
+    }
+    &.disabled{
+        background-color: transparent;
+        cursor: not-allowed;
+        color: $color-green;
+        border: 1px solid $color-green;
+    }
+    &:hover{
+        text-decoration: none!important;
+        background-color: $color-green;
+        color: $color-white;
+        border: 1px solid $color-green;
+    }
+    &:focus{
+        text-decoration: none!important;
+        background-color: $color-green;
+        color: $color-white;
+        border: 1px solid $color-green;
+    }
+}
+.greenNav{
+    color: $color-white;
+    border: 1px solid linear-gradient(to right, $color-light-green , $color-blue-grad);
+    background-color: linear-gradient(to right, $color-light-green , $color-blue-grad);
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    transition: 0.5s all;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    font-family: 'DM Sans', sans-serif;
+    @include font-size(13px);
+    &.button{
+        background-image: linear-gradient(to right, $color-light-green , $color-blue-grad);
+        color: $color-white !important;
+        border: 1px solid linear-gradient(to right, $color-light-green , $color-blue-grad) !important;
+    }
+    &.disabled{
+        background-color: transparent;
+        
+        cursor: not-allowed;
+        border: 1px solid linear-gradient(to right, $color-light-green , $color-blue-grad) !important;
+    }
+    &:hover{
+        text-decoration: none!important;
+        background-image: linear-gradient(to right, $color-white , $color-white) !important;
+        color: $color-blue-grad !important;
+        border: 1px solid $color-blue !important;
+    }
+    &:focus{
+        text-decoration: none!important;
+        background-image: linear-gradient(to right, $color-light-green , $color-blue-grad) !important;
+        color: $color-white !important;
+        border: 1px solid $color-blue !important;
+    }
+    &:active{
+        text-decoration: none!important;
+        background-image: linear-gradient(to right, $color-light-green , $color-blue-grad) !important;
+        color: $color-white !important;
+        border: 1px solid $color-blue !important;
+    }
+}
+
+.grey{
+    color: $color-grey;
+    border: 1px solid $color-grey;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    transition: 0.5s all;
+    border-radius: 0px;
+    letter-spacing: 2px;
+    @include font-size(13px);
+    &.button{
+        background-color: transparent;
+    }
+    &.disabled{
+        background-color: transparent;
+        cursor: not-allowed;
+        color: $color-grey;
+        border: 1px solid $color-grey;
+    }
+    &:hover{
+        text-decoration: none!important;
+        background-color:$color-grey;
+        color: $color-white;
+        border: 1px solid $color-grey;
+    }
+    &:focus{
+        text-decoration: none!important;
+        background-color: $color-grey;
+        color: $color-white;
+        border: 1px solid $color-grey;
+    }
+}
